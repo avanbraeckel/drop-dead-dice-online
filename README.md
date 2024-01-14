@@ -1,4 +1,3 @@
-# **CIS*3260 Assignment 2**
 ### **DropDeadDice Game - Rails**
 ##### Austin Van Braeckel - avanbrae@uoguelph.ca - 1085829
 
@@ -29,5 +28,4 @@ When it is running, you will be able to access the web application at the follow
 It will immediately bring you to the login/sign-in page to begin.
 
 ### ***Notes:***
-- The User page is implemented, for bonus marks
-- The Game History page is *not* implemented, as it is only for bonus marks, and there was a lack of time to complete it
+- The Game History page is a placeholder - not implemented
