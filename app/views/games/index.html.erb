@@ -1,0 +1,30 @@
+<h1>Drop Dead Dice - Play Game</h1>
+
+<hr>
+
+<p><strong>Current User: </strong><%= current_user.email %></p>
+
+
+<h2>Game Options</h2>
+<%= form_with url: getoptions_path, local: true, method: :post do%>
+  <div class="field">
+    <%= label_tag "Number of Players:" %><br>
+    <%= number_field_tag :num_players %>
+  </div>
+  <br>
+  <div class="field">
+    <%= label_tag "Number of Dice:" %><br>
+    <%= number_field_tag :num_dice %>
+  </div>
+  <div class="field">
+    <%= label_tag "Number of Sides:" %><br>
+    <%= number_field_tag :num_sides %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= submit_tag :Submit %>
+  </div>
+<% end %>
+<br>
+
+<%= link_to 'Go Back', root_path %>

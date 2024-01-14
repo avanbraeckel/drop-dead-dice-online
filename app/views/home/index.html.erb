@@ -1,0 +1,19 @@
+<h1>Drop Dead Dice - User Page</h1>
+<p id="notice"><%= notice %></p>
+
+<% if current_user %>
+  Logged in as <%= current_user.email %>.
+
+  <p>
+    <%= link_to "Play New Game", games_path %> |
+    <%= link_to "View Game History", "" %> |
+    <%= link_to "Exit", logout_path %>
+  </p>
+  <p>
+  </p>
+
+<% else %>
+  <%= link_to "Log In", login_path %> or
+  <%= link_to "Sign Up", signup_path %>
+
+<% end %>

@@ -1,0 +1,25 @@
+<h1>Drop Dead Dice - Play Game Results</h1>
+
+<p><strong>Current User: </strong><%= current_user.email %></p>
+<br>
+
+<h3>Description of Game</h3>
+
+<p>Number of players: <%= @player_count %></p>
+<p>Number of dice: <%= @dice_count %></p>
+<p>Number of sides per die: <%= @sides %></p>
+
+
+<br>
+<%= button_to "Play Again", playgame_path(:num_players => @player_count, :num_dice => @dice_count, :num_sides => @sides), method: :post %>
+<br>
+<%= link_to 'Change Settings', games_path %> |
+<%= link_to 'Go Back', root_path %>
+
+<br>
+<div>
+    <textarea readonly cols="75" rows="50">
+        <%= @game_text %>
+    </textarea>
+</div>
+
